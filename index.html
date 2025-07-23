@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nandini Hegde | AIML Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: #f9f5ff;
+      color: #333;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    header {
+      background: #5b2a9d;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+      animation: fadeIn 1s ease-out;
+    }
+
+    header img {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      border: 4px solid #fff;
+      margin-bottom: 1rem;
+      transition: transform 0.4s ease;
+    }
+
+    header img:hover {
+      transform: scale(1.05);
+    }
+
+    header h1 {
+      margin-bottom: 0.3rem;
+      font-size: 2.2rem;
+    }
+
+    .social-links {
+      margin-top: 1rem;
+      opacity: 0;
+      animation: fadeIn 1.5s ease-out forwards;
+      animation-delay: 1s;
+    }
+
+    .social-links a {
+      margin: 0 0.7rem;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    .social-links a:hover {
+      color: #ffd700;
+    }
+
+    section {
+      padding: 2rem 1rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .section-title {
+      color: #5b2a9d;
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+      border-bottom: 2px solid #d1b3ff;
+      padding-bottom: 0.3rem;
+    }
+
+    ul {
+      list-style-type: disc;
+      margin-left: 1.5rem;
+    }
+
+    a {
+      color: #5b2a9d;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .card {
+      background: white;
+      border-radius: 8px;
+      padding: 1.5rem;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+      margin-bottom: 2rem;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: slideUp 0.6s ease-out forwards;
+    }
+
+    .card:nth-child(1) { animation-delay: 0.4s; }
+    .card:nth-child(2) { animation-delay: 0.6s; }
+    .card:nth-child(3) { animation-delay: 0.8s; }
+    .card:nth-child(4) { animation-delay: 1s; }
+    .card:nth-child(5) { animation-delay: 1.2s; }
+    .card:nth-child(6) { animation-delay: 1.4s; }
+    .card:nth-child(7) { animation-delay: 1.6s; }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #eee;
+      font-size: 0.9rem;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="prof.jpg" alt="Nandini Hegde Profile Photo">
+    <h1>Nandini Hegde</h1>
+    <p>AI & Machine Learning Engineer | Web Developer | Creator</p>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/nandini-hegde-5a694425a/" target="_blank">LinkedIn</a> |
+      <a href="https://github.com/nandinihegde" target="_blank">GitHub</a> |
+      <a href="mailto:nandinijagdishhegde26@gmail.com">Email</a>
+    </div>
+  </header>
+
+  <section>
+    <div class="card">
+      <h2 class="section-title">Summary</h2>
+      <p>Passionate AI & ML student with hands-on experience in Python, OpenCV, and project-based learning. Developed intelligent systems including sign language recognition, deepfake detection, and a YouTube-integrated GRE & IELTS planner. Skilled in HTML, CSS, Figma, Canva, and deploying projects with Render & GitHub Pages.</p>
+    </div>
+
+    <div class="card">
+      <h2 class="section-title">Skills</h2>
+      <ul>
+        <li>Languages: Python, C</li>
+        <li>ML & Tools: TensorFlow, OpenCV, Scikit-learn</li>
+        <li>Web: HTML, CSS (Responsive Design)</li>
+        <li>Databases: MongoDB, SQL</li>
+        <li>Design: Figma, Canva</li>
+        <li>Visualization: Tableau, Power BI</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2 class="section-title">Projects</h2>
+      <ul>
+        <li><strong>Sign Language Recognition</strong> – Built using OpenCV & Python for gesture recognition. <a href="https://github.com/nandinihegde26/signlangdetectionopencv" target="_blank">[Repo]</a></li>
+        <li><strong>Deepfake Image Detection</strong> – CNN model to detect image tampering. <a href="https://github.com/nandinihegde26/deepfakedetectionimage" target="_blank">[Repo]</a></li>
+        <li><strong>GRE & IELTS Study Planner</strong> – YouTube-integrated planner with topic-wise tracking. <a href="https://github.com/nandinihegde26/study-tracker" target="_blank">[Repo]</a></li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2 class="section-title">Education</h2>
+      <ul>
+        <li><strong>B.E., CSE – AIML</strong> – MITE (2022–2026), CGPA: 8.87</li>
+        <li><strong>12th:</strong> Dayanand College, 80%</li>
+        <li><strong>10th:</strong> Kidees Info Park (CBSE), 92%</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2 class="section-title">Internships</h2>
+      <ul>
+        <li><strong>Eazy Cheez (2022–2023):</strong> Designed UI with HTML/CSS, and created marketing materials using Canva and Figma.</li>
+        <li><strong>DREXPAD (Oct 2024–Present):</strong> Building a voice-based resume builder using GPT/Gemini models and frontend/backend integration.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2 class="section-title">Achievements</h2>
+      <ul>
+        <li>Lead Team Member at Bengaluru Tech Summit 2023 & Mangaluru Technovanza 2024</li>
+        <li>Vice President of ARTIFERA Club – AIML Branch</li>
+        <li>Pitch Tank (MIT Manipal), Unstop – Startup pitching with Finzen</li>
+        <li>Participant in SAP Hackathon, HackFest IIIT Hyderabad, Asian Paints Innovation Challenge</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2 class="section-title">Blog</h2>
+      <p><a href="https://medium.com/@nandinijagdishhegde26" target="_blank">Visit my Medium Blog</a></p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Nandini Hegde 
+
+</body>
+</html>
